@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>agLocalSite</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/paletas.css">
+<link rel="stylesheet" href="css/painel.css">
+<script src="js/tema-dados.js"></script>
+<script src="js/tema.js"></script>
+</head>
+<body>
+<div class="shell">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="mark">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 1L7 13M1 7L13 7" stroke="currentColor" stroke-width="1.4"/>
+          <circle cx="7" cy="7" r="5.5" stroke="currentColor" stroke-width="1.4"/>
+        </svg>
+        <span id="brand-tag">agLocalSite</span>
+      </div>
+      <p id="brand-title" class="brand-title">agLocalSite</p>
+      <p id="brand-sub">Navegue pelas pastas ao lado.</p>
+    </div>
+    <div class="side-tools">
+      <button type="button" class="graph-btn" id="graph-btn" title="Grafo 3D das tags e busca">◎ Grafo de tags</button>
+      <button type="button" class="graph-btn" id="kb-btn" aria-pressed="false" title="Quadro Kanban: notas por status e itens de checklist">▦ Quadro</button>
+      <button type="button" class="graph-btn ag-plus" id="ag-plus" hidden aria-label="Abrir a barra de comandos" title="Buscar, criar nota, editar (Ctrl+K)">+</button>
+      <button type="button" class="graph-btn theme-btn" id="theme-btn" title="Alternar tema claro/escuro" aria-pressed="false">☾ Escuro</button>
+      <button type="button" class="graph-btn cfg-btn" id="cfg-btn" hidden title="Configurar o site: título, textos, paleta e pastas">⚙ Configurar</button>
+    </div>
+    <button type="button" class="graph-btn menu-btn" id="menu-btn" aria-expanded="false" aria-controls="tree">☰ Menu</button>
+    <nav class="tree" id="tree"></nav>
+  </aside>
+
+  <main>
+    <div id="graph-view"></div>
+    <section id="kb-view" hidden></section>
+    <div class="status-line" id="status-line"></div>
+    <div class="ag-bar" id="ag-bar" hidden></div>
+    <div class="panel">
+      <div class="corner-bl"></div>
+      <div class="corner-br"></div>
+      <div class="content" id="content"></div>
+    </div>
+    <footer class="hint">
+      Com o <code>agLocalSite/start.bat</code> / <code>start.sh</code> o site grava:
+      <code>Ctrl+K</code> cria uma nota ou edita este documento, e as caixas
+      do checklist se marcam com um clique; o <code>Quadro</code> mostra notas
+      por <code>status:</code> e itens de checklist, e move os cartões; o botão
+      <code>＋ Post-it</code> deixa uma anotação solta na página. Sem o servidor (abrindo o
+      <code>index.html</code> direto) ele só lê: edite os .md e rode
+      <code>sync.py</code>. Veja agLocalSite/LEIA-ME.md.
+    </footer>
+  </main>
+
+</div>
+
+<script src="js/markdown.js"></script>
+<script src="js/content.js"></script>
+<script src="js/graph-data.js"></script>
+<script src="js/search.js"></script>
+<script src="js/graph-model.js"></script>
+<script src="js/vendor/3d-force-graph.min.js"></script>
+<script src="js/graph-view.js"></script>
+<script src="js/write.js"></script>
+<script src="js/kanban-model.js"></script>
+<script src="js/kanban-view.js"></script>
+<script src="js/postit-model.js"></script>
+<script src="js/postit-view.js"></script>
+<script src="js/painel-model.js"></script>
+<script src="js/painel-view.js"></script>
+<script src="js/editor-ui.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

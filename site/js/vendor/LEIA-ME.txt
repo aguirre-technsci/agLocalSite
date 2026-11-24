@@ -1,0 +1,6 @@
+3d-force-graph 1.80.0 (licença MIT, ver LICENSE-3d-force-graph.txt)
+https://github.com/vasturiano/3d-force-graph
+Arquivo: dist/3d-force-graph.min.js do pacote npm, sem alterações.
+Traz embutidas as dependências three (MIT), d3-force-3d (MIT), three-forcegraph (MIT),
+three-render-objects (MIT), kapsule (MIT) e accessor-fn (MIT).
+Fica aqui, dentro do projeto, para o site funcionar sem internet.

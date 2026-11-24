@@ -1,0 +1,112 @@
+{
+ "slug": [
+  [
+   "Reunião de Sexta!",
+   "reuniao-de-sexta"
+  ],
+  [
+   "  Ação   rápida — v2 ",
+   "acao-rapida-v2"
+  ],
+  [
+   "Otimização-Térmica",
+   "otimizacao-termica"
+  ],
+  [
+   "!!!",
+   ""
+  ],
+  [
+   "日本語",
+   ""
+  ],
+  [
+   "aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa ",
+   "aaaaaaaaa-aaaaaaaaa-aaaaaaaaa-aaaaaaaaa-aaaaaaaaa-aaaaaaaaa-aaaaaaaaa-aaaaaaaaa"
+  ]
+ ],
+ "nota": [
+  {
+   "titulo": "Ideia",
+   "tags": [],
+   "corpo": "",
+   "esperado": "# Ideia\n"
+  },
+  {
+   "titulo": "Ideia",
+   "tags": [
+    "Dados Abertos",
+    "3D",
+    "dados abertos"
+   ],
+   "corpo": "texto",
+   "esperado": "---\ntags: [dados_abertos, 3d]\n---\n# Ideia\n\ntexto\n"
+  },
+  {
+   "titulo": "Outro",
+   "tags": [
+    "x"
+   ],
+   "corpo": "# Título do corpo\n\nresto",
+   "esperado": "---\ntags: [x]\n---\n# Título do corpo\n\nresto\n"
+  },
+  {
+   "titulo": "T",
+   "tags": [],
+   "corpo": "## subtítulo\nlinha",
+   "esperado": "# T\n\n## subtítulo\nlinha\n"
+  },
+  {
+   "titulo": "  Muitos   espaços ",
+   "tags": [],
+   "corpo": "  \n\ncorpo com linhas\r\nCRLF\n\n",
+   "esperado": "# Muitos espaços\n\ncorpo com linhas\nCRLF\n"
+  },
+  {
+   "titulo": "T",
+   "tags": [
+    "!!!",
+    ""
+   ],
+   "corpo": "a",
+   "esperado": "# T\n\na\n"
+  },
+  {
+   "titulo": "T",
+   "tags": [
+    "dados/ONS"
+   ],
+   "corpo": "",
+   "esperado": "---\ntags: [dados/ons]\n---\n# T\n"
+  },
+  {
+   "titulo": "T",
+   "tags": [],
+   "corpo": "#semespaço",
+   "esperado": "# T\n\n#semespaço\n"
+  },
+  {
+   "titulo": "T",
+   "tags": [],
+   "corpo": "",
+   "status": "Fazendo",
+   "esperado": "---\nstatus: Fazendo\n---\n# T\n"
+  },
+  {
+   "titulo": "T",
+   "tags": [
+    "x"
+   ],
+   "corpo": "a",
+   "status": "  Em   revisão ",
+   "esperado": "---\ntags: [x]\nstatus: Em revisão\n---\n# T\n\na\n"
+  },
+  {
+   "titulo": "T",
+   "tags": [],
+   "corpo": "",
+   "status": "   ",
+   "esperado": "# T\n"
+  }
+ ]
+}

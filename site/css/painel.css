@@ -1,0 +1,56 @@
+/* Painel "⚙ Configurar" (painel-view.js). Só variáveis do tema: acompanha claro, escuro e as paletas. Reaproveita .ag-dialogo, .ag-campo,
+   .ag-erro, .ag-faixa, .ag-acoes e .ag-btn do style.css, que não é editado. */
+
+.ag-config { width: min(760px, 100%); }
+.ag-config h3 {
+  margin: 0 0 12px; padding-bottom: 6px;
+  font: 700 13px var(--mono); letter-spacing: 0.04em; text-transform: uppercase; color: var(--line);
+  border-bottom: 1px solid var(--line-soft);
+}
+.cfg-secao { margin-bottom: 22px; }
+.ag-config .ag-campo input[type="text"] {
+  display: block; width: 100%; min-height: 44px; padding: 8px 12px;
+  font: 14px var(--mono); color: var(--ink); background: var(--panel);
+  border: 1px solid var(--line); border-radius: 3px;
+}
+.ag-config input::placeholder, .ag-config textarea::placeholder { color: var(--muted); opacity: 1; }
+.cfg-dica { margin: 0 0 8px; }
+
+/* campo de texto com o botão "padrão" ao lado */
+.cfg-linha { display: flex; gap: 8px; align-items: stretch; }
+.cfg-linha > input { flex: 1 1 auto; min-width: 0; }
+.cfg-mini { min-height: 44px; padding: 0 12px; font: 12px var(--mono); white-space: nowrap; }
+
+/* opções (paleta, rodapé) */
+.cfg-radios { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+.cfg-radio {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px;
+  font: 13px var(--mono); color: var(--ink); cursor: pointer;
+  background: var(--panel); border: 1px solid var(--line-soft); border-radius: 3px;
+}
+.cfg-radio:has(input:checked) { background: var(--accent-soft); border-color: var(--accent); }
+.cfg-radio input { margin: 0; accent-color: var(--accent); }
+.cfg-radio:focus-within { outline: 2px solid var(--line); outline-offset: 2px; }
+
+/* listas (ignorar, ordem do Home) */
+.cfg-itens { margin: 0 0 8px; padding: 0; list-style: none; }
+.cfg-item { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; }
+.cfg-nome { flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere; padding: 8px 12px; font: 13px var(--mono); background: var(--bg); border-left: 3px solid var(--line-soft); }
+
+/* somente leitura */
+.cfg-leitura { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 16px; margin: 0; font: 13px var(--mono); }
+.cfg-leitura dt { color: var(--muted); }
+.cfg-leitura dd { margin: 0; overflow-wrap: anywhere; }
+
+/* faixa de avisos e ações */
+.cfg-aviso { margin: 0 0 16px; }
+.cfg-aviso.ok { border-left-color: var(--accent2); }
+.cfg-aviso.erro { border-left-color: var(--danger); }
+.cfg-acoes { position: sticky; bottom: -22px; margin: 0 -26px -22px; padding: 12px 26px; background: var(--panel); border-top: 1px solid var(--line-soft); align-items: center; }
+.cfg-espaco { flex: 1 1 auto; }
+.ag-btn[disabled] { opacity: 0.5; cursor: not-allowed; }
+.cfg-btn { flex: 1; }
+@media (max-width: 560px) {
+  .cfg-acoes { flex-wrap: wrap; }
+  .cfg-leitura { grid-template-columns: minmax(0, 1fr); }
+}

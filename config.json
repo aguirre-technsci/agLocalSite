@@ -1,0 +1,14 @@
+{
+  "raiz": ".",
+  "titulo": "",
+  "subtitulo": "",
+  "etiqueta": "",
+  "titulo_aba": "",
+  "prefixo_url": "_ag",
+  "porta": 8000,
+  "ignorar": [],
+  "rotulos": {},
+  "home_prioridade": ["inicio", "home", "index", "readme"],
+  "textos": {},
+  "tema": { "paleta": "padrao", "modo": "claro" }
+}

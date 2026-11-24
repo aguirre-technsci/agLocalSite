@@ -1,0 +1,180 @@
+/* Paletas de cor do agLocalSite. A Padrão é o :root do style.css (sem atributo); as outras entram por <html data-palette="nome">.
+   Cada paleta tem um bloco claro e um escuro COMPLETO (o escuro vence o claro por especificidade). Só troca tokens de interface e do grafo;
+   post-its (--pi-*), bloco de código (--code-*), marca da busca (--hit-*) e --danger têm significado fixo e ficam como estão.
+   Contraste conferido por tests/test_paletas.py: nenhum par fica pior que o da Padrão, e chega a 4,5:1 onde a Padrão chega. */
+
+/* oceano, claro */
+:root[data-palette="oceano"] {
+  --bg: #ecf0f3;
+  --bg-grid: #e0e6eb;
+  --panel: #ffffff;
+  --ink: #152028;
+  --muted: #5a6872;
+  --line: #29465b;
+  --line-soft: #b9c6d0;
+  --accent: #1c76c4;
+  --accent-soft: #d2e4f4;
+  --accent2: #257e78;
+  --cite: #247b75;
+  --glass: rgba(255, 255, 255, 0.82);
+  --on-line: #ffffff;
+  --g-tag: #869098;
+  --g-tag-dim: #dde1e3;
+  --g-doc-dim: #d0d4d7;
+  --g-link: #9aa5ac;
+  --g-link-dim: #e3e6e8;
+}
+
+/* oceano, escuro */
+:root[data-palette="oceano"][data-theme="dark"] {
+  --bg: #0d1316;
+  --bg-grid: #131b20;
+  --panel: #172027;
+  --ink: #e3e9ed;
+  --muted: #818e98;
+  --line: #8eb3cc;
+  --line-soft: #2e3d48;
+  --accent: #3b9aed;
+  --accent-soft: #1a2d3d;
+  --accent2: #50d7ce;
+  --cite: #50d7ce;
+  --glass: rgba(23, 32, 39, 0.82);
+  --on-line: #0d1316;
+  --g-tag: #8d9ba5;
+  --g-tag-dim: #2e373d;
+  --g-doc-dim: #39444c;
+  --g-link: #566976;
+  --g-link-dim: #232a2f;
+}
+
+/* floresta, claro */
+:root[data-palette="floresta"] {
+  --bg: #edf2ef;
+  --bg-grid: #e1eae4;
+  --panel: #ffffff;
+  --ink: #15281c;
+  --muted: #536a5b;
+  --line: #295b3c;
+  --line-soft: #b9d0c1;
+  --accent: #a86315;
+  --accent-soft: #f4e4d2;
+  --accent2: #318157;
+  --cite: #2e7a52;
+  --glass: rgba(255, 255, 255, 0.82);
+  --on-line: #ffffff;
+  --g-tag: #86988c;
+  --g-tag-dim: #dde3e0;
+  --g-doc-dim: #d0d7d3;
+  --g-link: #9aaca1;
+  --g-link-dim: #e3e8e5;
+}
+
+/* floresta, escuro */
+:root[data-palette="floresta"][data-theme="dark"] {
+  --bg: #0e1511;
+  --bg-grid: #141f18;
+  --panel: #18251d;
+  --ink: #e3ede7;
+  --muted: #819889;
+  --line: #8ecca5;
+  --line-soft: #2e4837;
+  --accent: #f09a38;
+  --accent-soft: #3d2d1a;
+  --accent2: #5bcd90;
+  --cite: #5bcd90;
+  --glass: rgba(24, 37, 29, 0.82);
+  --on-line: #0e1511;
+  --g-tag: #8da596;
+  --g-tag-dim: #2e3d34;
+  --g-doc-dim: #394c40;
+  --g-link: #567662;
+  --g-link-dim: #232f27;
+}
+
+/* grafite, claro */
+:root[data-palette="grafite"] {
+  --bg: #efeff1;
+  --bg-grid: #e4e5e7;
+  --panel: #ffffff;
+  --ink: #151c28;
+  --muted: #5c6575;
+  --line: #293c5b;
+  --line-soft: #b9c1d0;
+  --accent: #4063b5;
+  --accent-soft: #d2dcf4;
+  --accent2: #467c75;
+  --cite: #42766f;
+  --glass: rgba(255, 255, 255, 0.82);
+  --on-line: #ffffff;
+  --g-tag: #868c98;
+  --g-tag-dim: #dde0e3;
+  --g-doc-dim: #d0d3d7;
+  --g-link: #9aa1ac;
+  --g-link-dim: #e3e5e8;
+}
+
+/* grafite, escuro */
+:root[data-palette="grafite"][data-theme="dark"] {
+  --bg: #101114;
+  --bg-grid: #17191c;
+  --panel: #1b1e22;
+  --ink: #e3e7ed;
+  --muted: #818998;
+  --line: #8ea5cc;
+  --line-soft: #2e3748;
+  --accent: #708fd7;
+  --accent-soft: #1a243d;
+  --accent2: #6dbab0;
+  --cite: #6dbab0;
+  --glass: rgba(27, 30, 34, 0.82);
+  --on-line: #101114;
+  --g-tag: #8d96a5;
+  --g-tag-dim: #2e343d;
+  --g-doc-dim: #39404c;
+  --g-link: #566276;
+  --g-link-dim: #23272f;
+}
+
+/* ameixa, claro */
+:root[data-palette="ameixa"] {
+  --bg: #f2eef2;
+  --bg-grid: #e9e2e9;
+  --panel: #ffffff;
+  --ink: #281528;
+  --muted: #755c75;
+  --line: #5b295b;
+  --line-soft: #d0b9d0;
+  --accent: #c1338d;
+  --accent-soft: #f4d2e8;
+  --accent2: #76479e;
+  --cite: #693f8d;
+  --glass: rgba(255, 255, 255, 0.82);
+  --on-line: #ffffff;
+  --g-tag: #988698;
+  --g-tag-dim: #e3dde3;
+  --g-doc-dim: #d7d0d7;
+  --g-link: #ac9aac;
+  --g-link-dim: #e8e3e8;
+}
+
+/* ameixa, escuro */
+:root[data-palette="ameixa"][data-theme="dark"] {
+  --bg: #150f15;
+  --bg-grid: #1e151e;
+  --panel: #231a23;
+  --ink: #ede3ed;
+  --muted: #988198;
+  --line: #cc8ecc;
+  --line-soft: #482e48;
+  --accent: #de5eaf;
+  --accent-soft: #3d1a30;
+  --accent2: #a679cd;
+  --cite: #a679cd;
+  --glass: rgba(35, 26, 35, 0.82);
+  --on-line: #150f15;
+  --g-tag: #a58da5;
+  --g-tag-dim: #3d2e3d;
+  --g-doc-dim: #4c394c;
+  --g-link: #765676;
+  --g-link-dim: #2f232f;
+}
