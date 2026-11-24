@@ -45,7 +45,7 @@ meu-projeto/            <- com "raiz": ".." tudo é lido a partir daqui
 - **Quadro Kanban** a partir das notas com `status:` e itens de checklist.
 - **Post-its** soltos na página.
 - **Atualização automática:** se um `.md` mudar em outro editor, a página percebe em poucos segundos.
-- **Painel ⚙ Configurar:** troca título, textos dos botões, paleta, pastas ignoradas e rótulos do menu sem abrir o `config.json`.
+- **Painel Configurar:** troca título, textos dos botões, paleta, pastas ignoradas e rótulos do menu sem abrir o `config.json`.
 - Tema claro/escuro, 5 paletas (`padrao`, `oceano`, `floresta`, `grafite`, `ameixa`) e layout para celular.
 - Links entre documentos com `` `pasta/arquivo.md` ``.
 
@@ -106,10 +106,6 @@ site/js/tema-dados.js
 - Arquivos e pastas ocultos (`.env`, `.git`), a pasta `dados/` e a própria `agLocalSite/` (quando está dentro da raiz) não são servidos.
 - A página tem CSP (`script-src 'self'`); HTML cru dentro de um `.md` aparece como texto, e imagem remota não é carregada.
 - **A raiz inteira fica visível no navegador local. Não exponha a porta na rede.**
-
-## OneDrive
-
-Itens que estão **só na nuvem** (Arquivos Sob Demanda) são pulados, para o OneDrive não baixar nada por causa do site; o terminal diz quantos ficaram de fora. Para incluí-los, marque "Manter sempre neste dispositivo". Com `raiz` apontando para uma pasta grande, a árvore é varrida a cada 2 segundos (só lista e datas, não o conteúdo).
 
 ## Testes
 
