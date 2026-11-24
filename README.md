@@ -124,7 +124,6 @@ Os `tests/*_navegador.py` (Playwright) exigem `pip install playwright && playwri
 - Renomear um `.md` à mão deixa o post-it dele para trás: mova também `dados/postits/<caminho>.json`.
 - `.md` fora de UTF-8 aparece com `?` nos caracteres inválidos.
 - Markdown: links só `http`, `https`, `mailto`, `#` e caminho relativo; imagem só se for local; lista aninhada fica achatada e `#####` não é título.
-- **Não verificado em ambiente real:** a detecção de itens só-nuvem do OneDrive, a porta exclusiva e a nova tentativa de gravação com arquivo preso no Windows (testados por simulação, em Linux); e a aparência de CSS, grafo 3D, Kanban, post-its e paletas em navegador (o `docs/checklist-visual.md` serve para conferir).
 
 A lista completa, com o motivo e o contorno de cada item, está no `LEIA-ME.md`.
 
